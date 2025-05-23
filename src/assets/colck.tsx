@@ -12,7 +12,7 @@ function Clocky() {
   }, [])
 
   const formatTime = (date: Date): string => {
-    return date.toLocaleTimeString('en-US', { hour12: false }) 
+    return date.toLocaleTimeString('en-US', { hour12: true }) // ✅ بصيغة 12 ساعة
   }
 
   return (
